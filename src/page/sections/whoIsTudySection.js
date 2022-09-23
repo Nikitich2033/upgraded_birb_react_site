@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 
 // assets
-import BirdImg from "../../assets/bird.jpg";
+//import BirdImg from "../../assets/bird.jpg";
 import Birb from "../../assets/156.png";
 import Birbs from "../../assets/9birbs.jpg";
 

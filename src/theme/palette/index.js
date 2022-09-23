@@ -13,10 +13,6 @@ const tertiary = {
   main: "#02060e",
 };
 
-const fourth = {
-  500: "#02060e",
-  main: "#02060e",
-};
 
 const palette = {
   primary,
