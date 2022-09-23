@@ -1,0 +1,148 @@
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import { styled } from "@mui/material/styles";
+import MuiAccordion from "@mui/material/Accordion";
+import MuiAccordionSummary from "@mui/material/AccordionSummary";
+import MuiAccordionDetails from "@mui/material/AccordionDetails";
+
+const QASection = () => {
+  return (
+    <Box id='questions'>
+      <Typography
+        variant="h1"
+        textAlign="center"
+        color="primary.main"
+        sx={{ mt: { md: "200px", xs: "67px" }, mb: { md: "54px", xs: "30px" } }}
+      >
+        Questions & Answers
+      </Typography>
+      <Box
+        sx={{
+          maxWidth: "1400px",
+          margin: "0 auto",
+          background: " #1a1a1a",
+          borderRadius: "36px",
+          padding: { md: "7.5rem 0", xs: "40px 30px 0 30px" },
+        }}
+      >
+        <Typography
+          sx={{
+            mb: "72px",
+            color: "secondary.main",
+            fontSize: { md: "48px", xs: "24px" },
+            paddingLeft: { md: "90px", xs: 0 },
+          }}
+        >
+          How do I buy TUD NFT?
+        </Typography>
+        <Box mx={{ md: "56px" }}>
+          <HorizontalNonLinearStepper />
+        </Box>
+      </Box>
+      <CustomizedAccordions />
+    </Box>
+  );
+};
+
+export default QASection;
+
+function HorizontalNonLinearStepper() {
+  return (
+    <div className="how-buy__content">
+      <div className="how-buy__line">
+        <div className="how-buy__line-item">1</div>
+        <div className="how-buy__line-item">2</div>
+        <div className="how-buy__line-item">3</div>
+        <div className="how-buy__line-item">4</div>
+      </div>
+      <div className="how-buy__body">
+        <div className="how-buy__item _1">Create an account on the Binance</div>
+        <div className="how-buy__item _2">
+          Find the collection with official links
+        </div>
+        <div className="how-buy__item _3">
+          Choose your favorite token and buy it
+        </div>
+        <div className="how-buy__item _4">
+          The token is available in your Binance account
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const Accordion = styled((props) => (
+  <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+  border: `1px solid ${theme.palette.divider}`,
+  "&:not(:last-child)": {
+    borderBottom: 0,
+  },
+  "&:before": {
+    display: "none",
+  },
+}));
+
+const AccordionSummary = styled((props) => (
+  <MuiAccordionSummary
+    // expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: "0.9rem" }} />}
+    {...props}
+  />
+))(({ theme }) => ({
+  backgroundColor:
+    theme.palette.mode === "dark"
+      ? "rgba(255, 255, 255, .05)"
+      : "rgba(0, 0, 0, .03)",
+  flexDirection: "row-reverse",
+  "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+    transform: "rotate(90deg)",
+  },
+  "& .MuiAccordionSummary-content": {
+    marginLeft: theme.spacing(1),
+  },
+}));
+
+const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+  padding: theme.spacing(2),
+  borderTop: "1px solid rgba(0, 0, 0, .125)",
+}));
+
+const QAList = [
+  {
+    label: "Collapsible Group Item #1",
+    value:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum",
+  },
+  {
+    label: "Collapsible Group Item #2",
+    value:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum",
+  },
+  {
+    label: "Collapsible Group Item #3",
+    value:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum",
+  },
+];
+
+export function CustomizedAccordions() {
+  const [expanded, setExpanded] = React.useState("panel1");
+
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded ? panel : false);
+  };
+
+  return (
+    <Box sx={{ maxWidth: "1232px", margin: "0 auto", px: "20px" }}>
+      {QAList.map((QA, index) => (
+        <Accordion expanded={expanded === index} onChange={handleChange(index)}>
+          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+            {QA.label}
+          </AccordionSummary>
+          <AccordionDetails>{QA.value}</AccordionDetails>
+        </Accordion>
+      ))}
+    </Box>
+  );
+}
