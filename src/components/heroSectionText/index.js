@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import AnimatedText from "./AnimatedText";
 
 // assets
-import SendIcon from "../../assets/send-icon.svg";
+import TwitterLogo from "../../assets/twitter_32x32.png";
 
 export default function HeroSectionText() {
   const placeholderText = [
@@ -49,11 +49,11 @@ export default function HeroSectionText() {
             }}
             variant="body1"
           >
-            10k generative nft collection
+           
           </Typography>
           <Link sx={sendLink} href="#">
             <Box sx={sendLinkBg} />
-            <img style={{ width: "32px" }} alt="send-icon" src={SendIcon} />
+            <img style={{ width: "32px" }} alt="send-icon" src={TwitterLogo} />
           </Link>
         </Box>
       </Box>

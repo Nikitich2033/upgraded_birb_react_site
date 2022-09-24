@@ -11,7 +11,6 @@ import { SwitchButton } from "../../components";
 import * as styles from "./navbar.styles";
 
 // assets
-//import Logo from "../../assets/logo.svg";
 import SendIcon from "../../assets/send-icon.svg";
 
 
@@ -31,7 +30,7 @@ const navlinks = [
     route: "#team",
   },
   {
-    label: "Questions",
+    label: "FAQ",
     route: "#questions",
   },
 ];

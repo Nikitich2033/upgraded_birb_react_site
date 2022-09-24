@@ -1,7 +1,7 @@
 import { Box, Link, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 
-import SendIcon from "../../assets/send-icon.svg";
+import TwitterLogo from "../../assets/twitter_32x32.png";
 import { bounceUpsettings } from "../lib/animations";
 
 const SocialInfo = () => {
@@ -12,13 +12,9 @@ const SocialInfo = () => {
           If you have any questions, message us
         </Typography>
         <Box sx={{ display: "flex", gap: "2.4rem" }}>
-          <Link href="#" sx={socialLink}>
-            <Box sx={sendButtonBg} />
-            support@tudnft.com
-          </Link>
           <Link sx={sendButton} href="#">
             <Box sx={sendButtonBg} />
-            <img style={{ width: "32px" }} alt="send-icon" src={SendIcon} />
+            <img style={{ width: "32px" }} alt="send-icon" src={TwitterLogo} />
           </Link>
         </Box>
       </Box>
@@ -28,7 +24,7 @@ const SocialInfo = () => {
         </Typography>
         <Link href="#" sx={socialLink}>
           <Box sx={sendButtonBg} />
-          hello@tudnft.com
+          marbalabs@gmail.com
         </Link>
       </Box>
     </Box>
