@@ -3,50 +3,35 @@ import { Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 
-import BirdImg from "../../assets/bird.jpg";
+// import BirdImg from "../../assets/bird.jpg";
+import Bird1 from "../../assets/1.png";
+import Bird2 from "../../assets/2.png";
+import Bird3 from "../../assets/3.png";
+import Bird4 from "../../assets/4.png";
 import { bounceUpsettings } from "../../components/lib/animations";
 
 const data = [
   {
-    name: "Orange Mafia",
+    src: Bird1,
+    name: "#69",
     id: 4073,
   },
   {
-    name: "Ugly Pantera",
+    src: Bird2,
+    name: "#420",
     id: 6376,
   },
   {
-    name: "Cactus Duck",
+    src: Bird3,
+    name: "#50",
     id: 7240,
   },
   {
-    name: "D-Easy",
+    src: Bird4,
+    name: "#28",
     id: 1524,
   },
-  {
-    name: "Metaturismo",
-    id: 7517,
-  },
-  {
-    name: "Yellow Tuddy",
-    id: 8389,
-  },
-  {
-    name: "Yoyager Classic",
-    id: 431,
-  },
-  {
-    name: "Shadow",
-    id: 3821,
-  },
-  {
-    name: "Digi Digi Boy",
-    id: 9708,
-  },
-  {
-    name: "Fire Air",
-    id: 2405,
-  },
+
 ];
 
 const CarouselSlider = () => {
@@ -85,7 +70,7 @@ const CarouselSlider = () => {
                 key={index}
                 component="img"
                 alt="tudy"
-                src={BirdImg}
+                src= {value.src}         //{Bird1}
                 sx={{
                   margin: "0 auto",
                   padding: "0 0.25rem",
@@ -110,18 +95,18 @@ const CarouselSlider = () => {
                 <Typography
                   textAlign="center"
                   color="secondary.main"
-                  variant="h5"
+                  variant="h1"
                   sx={{ whiteSpace: "nowrap" }}
                 >
                   {value.name}
                 </Typography>
-                <Typography
+                {/* <Typography
                   textAlign="center"
                   color="primary.main"
                   variant="body2"
                 >
                   TUD #{value.id}
-                </Typography>
+                </Typography> */}
               </Box>
             </Box>
           ))}

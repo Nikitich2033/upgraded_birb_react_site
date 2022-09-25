@@ -4,11 +4,11 @@ import { bounceUpsettings } from "../../components/lib/animations";
 
 import Image1 from "../../assets/1.avif";
 import Image2 from "../../assets/2.avif";
-import Image3 from "../../assets/3.gif";
+import Image3 from "../../assets/preview.gif";
 import Image4 from "../../assets/4.avif";
 import Image5 from "../../assets/5.avif";
 import Image6 from "../../assets/6.avif";
-import Image7 from "../../assets/7.gif";
+import Image7 from "../../assets/game.gif";
 import Image8 from "../../assets/8.avif";
 import Tick from "../../assets/tick.svg";
 

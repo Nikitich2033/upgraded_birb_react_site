@@ -1,10 +1,10 @@
 import React from "react";
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Typography,Link } from "@mui/material";
 import { motion } from "framer-motion";
 //import AnimatedText from "./AnimatedText";
 
 // assets
-import TwitterLogo from "../../assets/twitter_32x32.png";
+// import TwitterLogo from "../../assets/twitter_32x32.png";
 import ThickSpin  from "../../assets/thick_spin.gif";
 
 export default function HeroSectionText() {
@@ -25,7 +25,7 @@ export default function HeroSectionText() {
   };
 
   return (
-    <Box id="about">
+    <Box>
       <Box sx={root}>
         <Box sx={textWrapper}>
           <motion.div
@@ -35,7 +35,13 @@ export default function HeroSectionText() {
             variants={container}
           >
             <div className="container">
-            <img style={{ width: "14rem" }} alt="send-icon" src={ThickSpin} />
+            <Link
+                href="#about"
+            
+              >
+                <img style={{ width: "14rem" }} alt="send-icon" src={ThickSpin} />
+              </Link>
+            
               {/* {placeholderText.map((item, index) => {
                 return <AnimatedText {...item} key={index} />;
               })} */}
@@ -53,10 +59,7 @@ export default function HeroSectionText() {
           >
            
           </Typography>
-          <Link sx={sendLink} href="#">
-            {/* <Box sx={sendLinkBg} /> */}
-            <img style={{ width: "60px" }} alt="send-icon" src={TwitterLogo} />
-          </Link>
+          
         </Box>
       </Box>
     </Box>
@@ -72,6 +75,7 @@ export default function HeroSectionText() {
 
 const root = {
   width: "100%",
+  backgroundColor: "secondary.main",
   background: `url(${require("../../assets/night_waterfall.webp")})`,
   backgroundPosition: "top center",
   backgroundRepeat: "no-repeat",
@@ -100,16 +104,16 @@ const textWrapper = {
 //   height: "100%",
 // };
 
-const sendLink = {
-  position: "relative",
-  height: "68px",
-  width: "68px",
-  borderRadius: "50%",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  overflow: "hidden",
-};
+// const sendLink = {
+//   position: "relative",
+//   height: "68px",
+//   width: "68px",
+//   borderRadius: "50%",
+//   display: "flex",
+//   alignItems: "center",
+//   justifyContent: "center",
+//   overflow: "hidden",
+// };
 
 const linkWrapper = {
   display: { md: "flex", xs: "none" },

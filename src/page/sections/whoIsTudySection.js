@@ -3,8 +3,8 @@ import { Box, Typography } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 
 // assets
-//import BirdImg from "../../assets/bird.jpg";
-import Birb from "../../assets/156.png";
+import MarbaLogo from "../../assets/LogoTrans.svg";
+// import Birb from "../../assets/156.png";
 //import Birbs from "../../assets/9birbs.jpg";
 
 const WhoIsTudy = () => {
@@ -23,7 +23,7 @@ const WhoIsTudy = () => {
   });
 
   return (
-    <Box
+    <Box id="about"
       sx={{
         position: "relative",
         marginTop: { sm: `calc(10% - ${visibleValue * 7}px)`, xs: "5%" },
@@ -44,8 +44,8 @@ const WhoIsTudy = () => {
             xl: `calc(45% - ${visibleValue * 5}px)`,
           },
         }}
-        src={Birb}
-        alt="birb"
+        // src={Birb}
+        // alt="birb"
       />
       <Box
         ref={ref}
@@ -59,38 +59,46 @@ const WhoIsTudy = () => {
           padding: { md: "5rem 10rem", xs: "1.25rem 1rem" },
           paddingLeft: { md: 0, xs: "1rem" },
           position: "relative",
-          flexDirection: { md: "row", xs: "column" },
+          flexDirection: { md: "column", xs: "column" },
         }}
-      >
+      > 
+        <Box
+          component="img"
+          alt="tudy"
+          src={MarbaLogo}
+          sx={{
+            margin: "0 auto",
+            padding: "0 2rem",
+            overflow: "hidden",
+            objectFit: "cover",
+            width: "100%",
+            maxWidth: "900px",
+            height: "auto",
+          }}
+        />
         <Box sx={{ maxWidth: "800px" }}>
           <Typography
             sx={{
-              textAlign: { md: "left", xs: "center" },
-              ml: { md: 0, xs: "48px" },
+              textAlign: { md: "center", xs: "center" },
               mb: { md: 0, xs: "48px" },
               py: { md: 0, xs: "18px" },
             }}
             variant="h1"
           >
-            What is birb?
+            Who are we?
           </Typography>
           <Typography
-            sx={{ textAlign: { md: "left", xs: "center" } }}
+            sx={{ textAlign: { md: "center", xs: "center" } }}
             variant="h2"
           >
-            Collection of 10.000 unique birbs created by digital artists at MARBA LABS.
-            <br />
-            <br />
-            By minting a birb/eth NFT, you automatically become a member of an exclusive holder community 
-            on our Discord server - "The Birb Hollow"
-            <br />
-            You also gain access to our GameFi project - "The Lost Birb" where you can compete to win USDT.
+            A collective of artists, developers, and designers. Based in Marbella, Spain.
+            Who are determined to be open and transparent with their work.
           </Typography>
         </Box>
         <Box sx={{ maxWidth: "800px" }}>
           <Typography
             sx={{
-              textAlign: { md: "left", xs: "center" },
+              textAlign: { md: "center", xs: "center"  },
               mb: { md: 0, xs: "48px" },
               py: { md: 0, xs: "18px" },
             }}
@@ -99,7 +107,7 @@ const WhoIsTudy = () => {
             What is birb?
           </Typography>
           <Typography
-            sx={{ textAlign: { md: "left", xs: "center" } }}
+            sx={{ textAlign: { md: "center", xs: "center"  } }}
             variant="h2"
           >
             Collection of 10.000 unique birbs created by digital artists at MARBA LABS.
@@ -108,7 +116,7 @@ const WhoIsTudy = () => {
             By minting a birb/eth NFT, you automatically become a member of an exclusive holder community 
             on our Discord server - "The Birb Hollow"
             <br />
-            You also gain access to our GameFi project - "The Lost Birb" where you can compete to win USDT.
+            You also gain access to taking part in contests in our GameFi project - "The Lost Birb" where you can compete to win USDT.
           </Typography>
         </Box>
       </Box>

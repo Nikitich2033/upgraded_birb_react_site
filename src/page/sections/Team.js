@@ -2,20 +2,27 @@ import { Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import { bounceUpsettings } from "../../components/lib/animations";
 
-import Image from "../../assets/bird.jpg";
+// import Image from "../../assets/bird.jpg";
+
+import Birb1 from "../../assets/1.png";
+import Birb2 from "../../assets/2.png";
+import Birb3 from "../../assets/3.png";
 
 const data = [
   {
     name: "BirbDad",
     userType: "CEO + Lead Developer",
+    src: Birb1,
   },
   {
     name: "The Duke",
     userType: "CMO ",
+    src: Birb2,
   },
   {
     name: "Shegs",
     userType: "Community manager",
+    src: Birb3,
   },
   
 ];
@@ -38,7 +45,7 @@ const Team = () => {
             component={motion.div}
             {...bounceUpsettings}
           >
-            <Box component="img" sx={cardImg} src={Image} alt="img" />
+            <Box component="img" sx={cardImg} src={value.src} alt="img" />
             <Typography variant="h3" color="secondary.main" sx={{ mt: "20px" }}>
               {value.name}
             </Typography>
@@ -79,7 +86,7 @@ const teamContainer = {
 const cardImg = {
   width: { md: "300px", xs: "160px" },
   height: { md: "300px", xs: "160px" },
-  borderRadius: "50%",
+  borderRadius: "20%",
 };
 
 const card = { width: { md: "300px", xs: "160px" }, textAlign: "center" };
