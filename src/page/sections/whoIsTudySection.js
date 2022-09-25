@@ -64,12 +64,12 @@ const WhoIsTudy = () => {
       > 
         <Box
           component="img"
-          alt="tudy"
+          alt="Marba Logo"
           src={MarbaLogo}
           sx={{
             margin: "0 auto",
             padding: "0 2rem",
-            overflow: "hidden",
+            //overflow: "hidden",
             objectFit: "cover",
             width: "100%",
             maxWidth: "500px",
