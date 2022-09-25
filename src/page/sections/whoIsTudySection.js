@@ -72,7 +72,7 @@ const WhoIsTudy = () => {
             overflow: "hidden",
             objectFit: "cover",
             width: "100%",
-            maxWidth: "900px",
+            maxWidth: "500px",
             height: "auto",
           }}
         />
