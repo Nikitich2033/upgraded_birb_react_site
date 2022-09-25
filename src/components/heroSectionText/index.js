@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography,Link, Input, Button } from "@mui/material";
+import { Box, Typography,Link, TextField, Button} from "@mui/material";
 import { motion } from "framer-motion";
 import { useState } from 'react';
 import {ethers, BigNumber} from "ethers";
@@ -57,10 +57,12 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
 
   const handleIncrement = () => {
   
-      if (mintAmount >= 3) return;
+      if (mintAmount >= 5) return;
       setMintAmount(mintAmount + 1);
   
   }
+
+
 
   return (
   
@@ -107,18 +109,24 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
                           -
                         </Typography>
                       </Button>
-                        <Input 
-                            readOnly
-                            type="number" 
-    
-                            value={mintAmount} 
+                      <TextField
+                        // id="outlined-read-only-input"
+                       
+                        //variant="filled"
+                        sx={{ input: { color: 'white', fontSize:"25px", textAlign:"center"} }}
+                        value ={mintAmount}
+                        InputProps={{
+                         readOnly: true,
+                        
+                          }}
+                          variant="filled"
                         />
                         <Button
                         sx={{ minWidth: "2rem" }}
                         // size={screenDownSm ? "small" : "medium"}
                         variant="contained"
                         onClick={handleIncrement}
-                      >
+                        >
                         <Typography variant="h2" color="tertiary.main">
                           +
                         </Typography>
@@ -130,7 +138,7 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
                           alignItems="center"
                     >
                     <Button
-                    sx={{ minWidth: "2rem" }}
+                    sx={{ minWidth: "2rem", mt: "1rem" }}
                     // size={screenDownSm ? "small" : "medium"}
                     variant="contained"
                     onClick={handleMint}
