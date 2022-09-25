@@ -3,7 +3,8 @@ import { Box } from "@mui/material";
 import { Navbar, Footer } from "../../components";
 import * as styles from "./container.styles";
 
-const Container = ({ children }) => {
+
+const Container  = ({ children,accounts, setAccounts }) => {
   return (
     <Box
       sx={{
@@ -12,7 +13,7 @@ const Container = ({ children }) => {
       }}
     >
       <Box sx={styles.root}>
-        <Navbar />
+        <Navbar accounts={accounts} setAccounts={setAccounts}/>
         {children}
         <Footer />
       </Box>

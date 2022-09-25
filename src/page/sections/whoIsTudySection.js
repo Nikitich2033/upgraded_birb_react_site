@@ -57,7 +57,7 @@ const WhoIsTudy = () => {
           backgroundColor: "primary.main",
           borderRadius: "36px",
           padding: { md: "5rem 10rem", xs: "1.25rem 1rem" },
-          paddingLeft: { md: 0, xs: "1rem" },
+          paddingLeft: { md: "1", xs: "1rem" },
           position: "relative",
           flexDirection: { md: "column", xs: "column" },
         }}
@@ -69,9 +69,9 @@ const WhoIsTudy = () => {
           sx={{
             margin: "0 auto",
             padding: "0 2rem",
-            //overflow: "hidden",
+            overflow: "hidden",
             objectFit: "cover",
-            width: "100%",
+            width: "90%",
             maxWidth: "500px",
             height: "auto",
           }}

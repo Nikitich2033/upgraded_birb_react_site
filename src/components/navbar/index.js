@@ -14,8 +14,6 @@ import * as styles from "./navbar.styles";
 // import SendIcon from "../../assets/send-icon.svg";
 import TwitterLogo from "../../assets/twitter_32x32.png";
 
-import { useState } from 'react';
-
 const navlinks = [
   {
     label: "About",
@@ -35,13 +33,7 @@ const navlinks = [
   },
 ];
 
-// const languages = [
-//   { label: "RU", value: "ru" },
-//   { label: "ENG", value: "eng" },
-// ];
-
-const Navbar = () => {
-  // const [language, setLanguage] = React.useState("eng");
+const Navbar = ({ accounts, setAccounts }) => {
 
   const [isVisible, setIsVisible] = React.useState(true);
   const [scrollY, setScrollY] = React.useState(0);
@@ -52,8 +44,6 @@ const Navbar = () => {
   const theme = useTheme();
   const screenDownMd = useMediaQuery(theme.breakpoints.down("md"));
   const screenDownSm = useMediaQuery(theme.breakpoints.down("sm"));
-
-  // const handleChangeLanguage = (value) => setLanguage(value);
 
   React.useEffect(() => {
     if (screenDownMd && isMenu) {
@@ -80,7 +70,7 @@ const Navbar = () => {
     }
   }
   
-  const [accounts, setAccounts] = useState([]);
+  //const [accounts, setAccounts] = useState([]);
   const isConnected = Boolean(accounts[0]);
 
   return (
@@ -130,7 +120,7 @@ const Navbar = () => {
                   size={screenDownSm ? "small" : "medium"}
                   variant="contained"
                   onClick={connectAccount}
-                  accounts={accounts} setAccounts={setAccounts}
+                  //accounts={accounts} setAccounts={setAccounts}
                 >
                 <Typography variant="h3" color="tertiary.main">
                     Connect Wallet
