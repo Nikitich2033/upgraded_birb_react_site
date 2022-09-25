@@ -53,7 +53,7 @@ const typography = (theme) => ({
   body1: {
     fontSize: "1rem",
     lineHeight: 1.5,
-    fontFamily: 'Bungee Shade, cursive',
+    fontFamily: 'VT323, monospace',
   },
   body2: {
     fontSize: "0.875rem",

@@ -28,7 +28,7 @@
 }
 .roadmap-levels__line {
   width: 1px;
-  background: #f9c037;
+  background: #00ff00;
 }
 
 .roadmap-levels__item {
@@ -43,11 +43,12 @@
   align-items: center;
 }
 .roadmap-levels__buble {
-  background: #f9c037;
+  background: #00ff00;
   border-radius: 50%;
   color: #02060e;
   font-weight: 600;
   font-size: 21px;
+  font-family: 'VT323', monospace;
   width: 48px;
   height: 48px;
   -ms-flex-pack: center;
@@ -59,7 +60,7 @@
 }
 .roadmap-levels__line {
   width: 1px;
-  background: #f9c037;
+  background: #00ff00;
 }
 .roadmap-levels__line._1 {
   height: 24rem;

@@ -6,53 +6,18 @@ import Image from "../../assets/bird.jpg";
 
 const data = [
   {
-    name: "Dmitry",
-    userType: "Founding Partner",
+    name: "BirbDad",
+    userType: "CEO + Lead Developer",
   },
   {
-    name: "Aleksey",
-    userType: "CPO",
+    name: "The Duke",
+    userType: "CMO ",
   },
   {
-    name: "Dmitry",
-    userType: "Executive Game Producer",
+    name: "Shegs",
+    userType: "Community manager",
   },
-  {
-    name: "Nick",
-    userType: "CTO",
-  },
-  {
-    name: "Ksenia",
-    userType: "Unity Developer",
-  },
-  {
-    name: "Oscar",
-    userType: "Blockchain Developer",
-  },
-  {
-    name: "George",
-    userType: "Fullstack Developer + DevOps",
-  },
-  {
-    name: "Max",
-    userType: "Unity Developer",
-  },
-  {
-    name: "Darry",
-    userType: "2D/3D Animator",
-  },
-  {
-    name: "Mike",
-    userType: "VFX Tech Artist",
-  },
-  {
-    name: "Katherine",
-    userType: "UI/UX Designer",
-  },
-  {
-    name: "Denis",
-    userType: "2D/3D Animator",
-  },
+  
 ];
 
 const Team = () => {
@@ -74,7 +39,7 @@ const Team = () => {
             {...bounceUpsettings}
           >
             <Box component="img" sx={cardImg} src={Image} alt="img" />
-            <Typography variant="h5" color="secondary.main" sx={{ mt: "20px" }}>
+            <Typography variant="h3" color="secondary.main" sx={{ mt: "20px" }}>
               {value.name}
             </Typography>
             <Typography variant="body1" fontWeight={500} color="#a2a2a2">

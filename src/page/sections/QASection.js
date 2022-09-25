@@ -15,7 +15,7 @@ const QASection = () => {
         color="primary.main"
         sx={{ mt: { md: "200px", xs: "67px" }, mb: { md: "54px", xs: "30px" } }}
       >
-        Questions & Answers
+        Frequently Asked Questions
       </Typography>
       <Box
         sx={{
@@ -34,7 +34,7 @@ const QASection = () => {
             paddingLeft: { md: "90px", xs: 0 },
           }}
         >
-          How do I buy TUD NFT?
+          How do I acquire a birb NFT?
         </Typography>
         <Box mx={{ md: "56px" }}>
           <HorizontalNonLinearStepper />
@@ -51,21 +51,30 @@ function HorizontalNonLinearStepper() {
   return (
     <div className="how-buy__content">
       <div className="how-buy__line">
-        <div className="how-buy__line-item">1</div>
-        <div className="how-buy__line-item">2</div>
-        <div className="how-buy__line-item">3</div>
-        <div className="how-buy__line-item">4</div>
+        <div className="how-buy__line-item"><Typography variant="h4">1</Typography></div>
+        <div className="how-buy__line-item"><Typography variant="h4">2</Typography></div>
+        <div className="how-buy__line-item"><Typography variant="h4">3</Typography></div>
+        <div className="how-buy__line-item"><Typography variant="h4">4</Typography></div>
       </div>
       <div className="how-buy__body">
-        <div className="how-buy__item _1">Create an account on the Binance</div>
+        <div className="how-buy__item _1">
+          <Typography variant="h4">
+           Click on the button in the top right corner to connect your wallet.
+          </Typography></div>
         <div className="how-buy__item _2">
-          Find the collection with official links
+          <Typography variant="h4">
+            Click on the “Mint” button on the homepage and select the amount of birbs you want to buy
+          </Typography>
         </div>
-        <div className="how-buy__item _3">
-          Choose your favorite token and buy it
+        <div className="how-buy__item _3"> 
+          <Typography variant="h4">
+          Accept the transaction in your wallet and wait for the confirmation
+          </Typography>
         </div>
         <div className="how-buy__item _4">
-          The token is available in your Binance account
+          <Typography variant="h4">
+          Enjoy your birb (or many birbs!) and share it with your friends!
+          </Typography>
         </div>
       </div>
     </div>
@@ -86,7 +95,7 @@ const Accordion = styled((props) => (
 
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
-    // expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: "0.9rem" }} />}
+   
     {...props}
   />
 ))(({ theme }) => ({
@@ -110,17 +119,17 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 const QAList = [
   {
-    label: "Collapsible Group Item #1",
+    label: "Question #1",
     value:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum",
   },
   {
-    label: "Collapsible Group Item #2",
+    label: "Question #2",
     value:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum",
   },
   {
-    label: "Collapsible Group Item #3",
+    label: "Question #3",
     value:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum",
   },

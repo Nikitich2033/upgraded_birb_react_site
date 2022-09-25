@@ -20,7 +20,7 @@ const SocialInfo = () => {
       </Box>
       <Box sx={card} component={motion.div} {...bounceUpsettings}>
         <Typography sx={label}>
-          For partnership and ideas, contact us via
+          For collabs and ideas, contact us via
         </Typography>
         <Link href="#" sx={socialLink}>
           <Box sx={sendButtonBg} />

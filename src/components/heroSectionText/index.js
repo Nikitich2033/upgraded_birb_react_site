@@ -5,6 +5,7 @@ import AnimatedText from "./AnimatedText";
 
 // assets
 import TwitterLogo from "../../assets/twitter_32x32.png";
+import ThickSpin  from "../../assets/thick_spin.gif";
 
 export default function HeroSectionText() {
   const placeholderText = [
@@ -34,9 +35,10 @@ export default function HeroSectionText() {
             variants={container}
           >
             <div className="container">
-              {placeholderText.map((item, index) => {
+            <img style={{ width: "14rem" }} alt="send-icon" src={ThickSpin} />
+              {/* {placeholderText.map((item, index) => {
                 return <AnimatedText {...item} key={index} />;
-              })}
+              })} */}
             </div>
           </motion.div>
         </Box>
@@ -52,8 +54,8 @@ export default function HeroSectionText() {
            
           </Typography>
           <Link sx={sendLink} href="#">
-            <Box sx={sendLinkBg} />
-            <img style={{ width: "32px" }} alt="send-icon" src={TwitterLogo} />
+            {/* <Box sx={sendLinkBg} /> */}
+            <img style={{ width: "60px" }} alt="send-icon" src={TwitterLogo} />
           </Link>
         </Box>
       </Box>
@@ -61,11 +63,22 @@ export default function HeroSectionText() {
   );
 }
 
+// const root = {
+//   dispaly: "flex",
+//   alignItems: "center",
+//   justifyContent: "space-between",
+//   width: "100%",
+// };
+
 const root = {
-  dispaly: "flex",
-  alignItems: "center",
-  justifyContent: "space-between",
   width: "100%",
+  background: `url(${require("../../assets/night_waterfall.webp")})`,
+  backgroundPosition: "top center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  display: "flex",
+  flexDirection: "column",
+  gap: { md: "350px", xs: "60px" },
 };
 
 const textWrapper = {
@@ -77,15 +90,15 @@ const textWrapper = {
   height: { md: "750px", sm: "500px", xs: "400px" },
 };
 
-const sendLinkBg = {
-  backgroundColor: "secondary.main",
-  opacity: 0.1,
-  position: "absolute",
-  top: 0,
-  left: 0,
-  width: "100%",
-  height: "100%",
-};
+// const sendLinkBg = {
+//   backgroundColor: "secondary.main",
+//   opacity: 0.1,
+//   position: "absolute",
+//   top: 0,
+//   left: 0,
+//   width: "100%",
+//   height: "100%",
+// };
 
 const sendLink = {
   position: "relative",

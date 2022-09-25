@@ -89,7 +89,7 @@ const CarouselSlider = () => {
                 sx={{
                   margin: "0 auto",
                   padding: "0 0.25rem",
-                  borderRadius: "50%",
+                  borderRadius: "30%",
                   overflow: "hidden",
                   objectFit: "cover",
                   width: "100%",

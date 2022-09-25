@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Typography, useTheme, useMediaQuery } from "@mui/material";
+import { Typography, useTheme, useMediaQuery,} from "@mui/material";
 
 // Word wrapper
 const Wrapper = (props) => {
@@ -51,6 +51,8 @@ const AnimatedCharacters = (props) => {
   });
 
   return (
+
+    // <Box component="img" sx={ThickSpin} src={Image} alt="img" />
     <Typography
       sx={{
         fontSize: screenDownMd ? "4.5rem" : "12rem",
@@ -60,7 +62,8 @@ const AnimatedCharacters = (props) => {
         textAlign: "center",
         color: "secondary.main",
       }}
-    >
+      >
+        
       {words.map((word, index) => {
         return (
           // Wrap each word in the Wrapper component

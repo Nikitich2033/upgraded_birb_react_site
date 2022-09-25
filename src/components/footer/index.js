@@ -9,9 +9,9 @@ const Footer = () => {
       <SocialInfo />
       <Box>
         <Typography component={motion.div} {...bounceUpsettings} sx={title}>
-          Are you
+          The future
           <br />
-          ready?
+          is birb
         </Typography>
         <Box sx={footer}>
           <Typography sx={{ ...link, textDecoration: "none" }}>
@@ -36,7 +36,7 @@ export default Footer;
 
 const root = {
   width: "100%",
-  background: `url(${require("../../assets/duck.avif")})`,
+  //background: `url(${require("../../assets/duck.avif")})`,
   backgroundPosition: "top center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",

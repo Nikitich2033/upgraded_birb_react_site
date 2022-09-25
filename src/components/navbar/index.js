@@ -7,12 +7,12 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import { SwitchButton } from "../../components";
+//import { SwitchButton } from "../../components";
 import * as styles from "./navbar.styles";
 
 // assets
-import SendIcon from "../../assets/send-icon.svg";
-
+// import SendIcon from "../../assets/send-icon.svg";
+import TwitterLogo from "../../assets/twitter_32x32.png";
 
 import { useState } from 'react';
 
@@ -35,13 +35,13 @@ const navlinks = [
   },
 ];
 
-const languages = [
-  { label: "RU", value: "ru" },
-  { label: "ENG", value: "eng" },
-];
+// const languages = [
+//   { label: "RU", value: "ru" },
+//   { label: "ENG", value: "eng" },
+// ];
 
 const Navbar = () => {
-  const [language, setLanguage] = React.useState("eng");
+  // const [language, setLanguage] = React.useState("eng");
 
   const [isVisible, setIsVisible] = React.useState(true);
   const [scrollY, setScrollY] = React.useState(0);
@@ -53,7 +53,7 @@ const Navbar = () => {
   const screenDownMd = useMediaQuery(theme.breakpoints.down("md"));
   const screenDownSm = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const handleChangeLanguage = (value) => setLanguage(value);
+  // const handleChangeLanguage = (value) => setLanguage(value);
 
   React.useEffect(() => {
     if (screenDownMd && isMenu) {
@@ -86,12 +86,6 @@ const Navbar = () => {
   return (
     <>
       <Box sx={isVisible ? styles.root : styles.rootHide}>
-        {/* <Box
-          component="img"
-          sx={{ height: { xs: "1rem", sm: "1.5rem" } }}
-          src={Logo}
-          alt="logo"
-        /> */}
         <Box>
           <Typography variant="h1" color="secondary.main">
               birb/eth
@@ -163,17 +157,18 @@ const Navbar = () => {
             opacity: isMenu ? 1 : 0,
           }}
         >
-          <SwitchButton
+          {/* <SwitchButton
             value={language}
             onChange={handleChangeLanguage}
             options={languages}
-          />
+          /> */}
           <Box sx={styles.navlist}>
             {navlinks.map((navlink, index) => (
               <Link
                 href={navlink.route}
                 fontWeight={400}
                 color="secondary"
+                variant="h6"
                 fontSize="36px"
                 key={index}
                 onClick={handleMenu}
@@ -185,10 +180,10 @@ const Navbar = () => {
           <Box>
             <Link sx={styles.sendLink} href="#" onClick={handleMenu}>
               <Box sx={styles.linkBg} />
-              <img style={{ width: "22px" }} alt="send-icon" src={SendIcon} />
+              <img style={{ width: "22px" }} alt="send-icon" src={TwitterLogo} />
             </Link>
             <Typography variant="body2" color="secondary.main">
-              2022 Ⓒ‎TUD, All Rights Reserved
+              2022 Ⓒ‎birb, All Rights Reserved
             </Typography>
           </Box>
         </Box>

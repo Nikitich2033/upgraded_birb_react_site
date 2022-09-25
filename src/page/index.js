@@ -17,7 +17,7 @@ const Home = () => {
       <Team />
       <FollowUs />
       <QASection />
-      <BuyOnBinance />
+      {/* <BuyOnBinance /> */}
     </Container>
   );
 };

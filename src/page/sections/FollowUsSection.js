@@ -1,9 +1,12 @@
 import { Box, Link, Typography } from "@mui/material";
-import Image from "../../assets/social-photo.svg";
-import SendIcon from "../../assets/send-icon.svg";
+// import Image from "../../assets/social-photo.svg";
+// import SendIcon from "../../assets/send-icon.svg";
+import TwitterLogo from "../../assets/twitter_32x32.png";
 
 import { motion } from "framer-motion";
 import { bounceUpsettings } from "../../components/lib/animations";
+
+import TwitterProfile from "../../assets/twitter_profile.png";
 
 const FollowUs = () => {
   return (
@@ -22,7 +25,7 @@ const FollowUs = () => {
     >
       <Box
         component="img"
-        src={Image}
+        src={TwitterProfile}
         sx={{
           width: { md: "389px", xs: "220px" },
           maxWidth: { md: "389px", xs: "220px" },
@@ -31,7 +34,7 @@ const FollowUs = () => {
       />
       <Box>
         <Typography sx={desc}>
-          Follow us on favorite social media platforms, support our community
+          Follow us on Twitter to get the latest updates on our project and become part of our community.
         </Typography>
 
         <Link
@@ -46,20 +49,20 @@ const FollowUs = () => {
             justifyContent: "center",
             overflow: "hidden",
           }}
-          href="#"
+          href="https://twitter.com/birbweb3"
         >
           <Box
-            sx={{
-              backgroundColor: "secondary.main",
-              opacity: 0.1,
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-            }}
+            // sx={{
+            //   backgroundColor: "secondary.main",
+            //   opacity: 0.1,
+            //   position: "absolute",
+            //   top: 0,
+            //   left: 0,
+            //   width: "100%",
+            //   height: "100%",
+            // }}
           />
-          <img style={{ width: "32px" }} alt="send-icon" src={SendIcon} />
+          <img style={{ width: "60px" }} alt="send-icon" src={TwitterLogo} />
         </Link>
       </Box>
     </Box>
