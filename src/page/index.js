@@ -5,7 +5,7 @@ import RoadMap from "./sections/RoadMap";
 import Team from "./sections/Team";
 import FollowUs from "./sections/FollowUsSection";
 import QASection from "./sections/QASection";
-import BuyOnBinance from "./sections/BuyOnBinance";
+//import BuyOnBinance from "./sections/BuyOnBinance";
 
 const Home = () => {
   return (

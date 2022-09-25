@@ -1,20 +1,20 @@
 import React from "react";
 import { Box, Link, Typography } from "@mui/material";
 import { motion } from "framer-motion";
-import AnimatedText from "./AnimatedText";
+//import AnimatedText from "./AnimatedText";
 
 // assets
 import TwitterLogo from "../../assets/twitter_32x32.png";
 import ThickSpin  from "../../assets/thick_spin.gif";
 
 export default function HeroSectionText() {
-  const placeholderText = [
-    //{ text: "birb/eth" },
-    {
-      text: "birb",
-      superText: "NFT",
-    },
-  ];
+  // const placeholderText = [
+  //   { text: "birb/eth" },
+  //   {
+  //     text: "birb",
+  //     superText: "NFT",
+  //   },
+  // ];
 
   const container = {
     visible: {
