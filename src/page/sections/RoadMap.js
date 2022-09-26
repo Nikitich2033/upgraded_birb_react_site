@@ -247,18 +247,20 @@ const RoadMap = () => {
           {/* <Box component="img" src={Image6} sx={{ width: "100%" }} /> */}
         </Box>
         
-        <Link
+        <Box
+            sx={{ order: { lg: 0, xs: 13 } }}
+            component={motion.div}
+            {...bounceUpsettings}
+                  > 
+          <Link
                 href= "https://thelostbirb.com"
                 
               >
-                <Box
-                  sx={{ order: { lg: 0, xs: 13 } }}
-                  component={motion.div}
-                  {...bounceUpsettings}
-                  > 
+               
           <Box component="img" src={Image7} sx={{ width: "100%" }}/>
-          </Box>
-        </Link>
+         
+          </Link>
+        </Box>
         
 
         <Box
