@@ -3,7 +3,6 @@ import { Box, Typography } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 
 // assets
-import MarbaLogo from "../../assets/LogoTrans.svg";
 // import Birb from "../../assets/156.png";
 //import Birbs from "../../assets/9birbs.jpg";
 
@@ -62,20 +61,14 @@ const WhoIsTudy = () => {
           flexDirection: { md: "column", xs: "column" },
         }}
       > 
-        <Box
-          component="img"
-          alt="Marba Logo"
-          src={MarbaLogo}
-          sx={{
-            margin: "0 auto",
-            padding: "0 2rem",
-            overflow: "hidden",
-            objectFit: "cover",
-            width: "90%",
-            maxWidth: "500px",
-            height: "auto",
-          }}
-        />
+        <Box>
+        <Typography
+            sx={{ textAlign: { md: "center", xs: "center" }, fontFamily:'Monoton' }}
+            variant="h1"
+          >
+            MARBA LABS
+          </Typography>
+        </Box>
         <Box sx={{ maxWidth: "800px" }}>
           <Typography
             sx={{

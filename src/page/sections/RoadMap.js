@@ -1,15 +1,15 @@
-import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme, Link } from "@mui/material";
 import { motion } from "framer-motion";
 import { bounceUpsettings } from "../../components/lib/animations";
 
-import Image1 from "../../assets/1.avif";
-import Image2 from "../../assets/2.avif";
+// import Image1 from "../../assets/1.avif";
+// import Image2 from "../../assets/2.avif";
 import Image3 from "../../assets/preview.gif";
-import Image4 from "../../assets/4.avif";
-import Image5 from "../../assets/5.avif";
-import Image6 from "../../assets/6.avif";
+// import Image4 from "../../assets/4.avif";
+// import Image5 from "../../assets/5.avif";
+// import Image6 from "../../assets/6.avif";
 import Image7 from "../../assets/game.gif";
-import Image8 from "../../assets/8.avif";
+// import Image8 from "../../assets/8.avif";
 import Tick from "../../assets/tick.svg";
 
 const RoadMap = () => {
@@ -37,11 +37,11 @@ const RoadMap = () => {
           component={motion.div}
           {...bounceUpsettings}
         >
-          <Box
+          {/* <Box
             component="img"
             src={Image1}
             sx={{ maxWidth: "450px", width: "100%" }}
-          />
+          /> */}
         </Box>
         <Box
           sx={{
@@ -102,7 +102,7 @@ const RoadMap = () => {
           component={motion.div}
           {...bounceUpsettings}
         >
-          <Box component="img" src={Image2} sx={{ width: "100%" }} />
+          {/* <Box component="img" src={Image2} sx={{ width: "100%" }} /> */}
         </Box>
         <Box
           sx={{ order: { lg: 0, xs: 5 } }}
@@ -132,12 +132,10 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            Launching our collection on Binance Blockchain
+            Launching our collection on ETH blockchain.
           </Typography>
           <Typography variant="h4" color="secondary.main">
-            Our collection of 10 000 unique characters is divided into four
-            equal parts: I Drop - $149, II Drop - $199, III Drop - $249, IV Drop
-            - $299.
+            Details TBA
           </Typography>
         </Box>
         <Box
@@ -173,14 +171,14 @@ const RoadMap = () => {
           component={motion.div}
           {...bounceUpsettings}
         >
-          <Box component="img" src={Image4} sx={{ width: "100%" }} />
+          {/* <Box component="img" src={Image4} sx={{ width: "100%" }} /> */}
         </Box>
         <Box
           sx={{ order: { lg: 0, xs: 9 } }}
           component={motion.div}
           {...bounceUpsettings}
         >
-          <Box component="img" src={Image5} sx={{ width: "100%" }} />
+          {/* <Box component="img" src={Image5} sx={{ width: "100%" }} /> */}
         </Box>
         <Box
           sx={{
@@ -246,16 +244,22 @@ const RoadMap = () => {
           component={motion.div}
           {...bounceUpsettings}
         >
-          <Box component="img" src={Image6} sx={{ width: "100%" }} />
+          {/* <Box component="img" src={Image6} sx={{ width: "100%" }} /> */}
         </Box>
-
-        <Box
-          sx={{ order: { lg: 0, xs: 13 } }}
-          component={motion.div}
-          {...bounceUpsettings}
-        >
-          <Box component="img" src={Image7} sx={{ width: "100%" }} />
-        </Box>
+        
+        <Link
+                href= "https://thelostbirb.com"
+                
+              >
+                <Box
+                  sx={{ order: { lg: 0, xs: 13 } }}
+                  component={motion.div}
+                  {...bounceUpsettings}
+                  > 
+          <Box component="img" src={Image7} sx={{ width: "100%" }}/>
+          </Box>
+        </Link>
+        
 
         <Box
           sx={{
@@ -278,11 +282,11 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            Testing the beta version of the game
+            Testing the alpha version of the game.
           </Typography>
           <Typography variant="h4" color="secondary.main">
             The first test launch of a P2E game and collecting feedback together
-            with partners and the largest TUD holders.
+            with partners and the largest TUD holders. Click on the image to try it out!
           </Typography>
         </Box>
 
@@ -320,7 +324,7 @@ const RoadMap = () => {
           component={motion.div}
           {...bounceUpsettings}
         >
-          <Box component="img" src={Image8} sx={{ width: "100%" }} />
+          {/* <Box component="img" src={Image8} sx={{ width: "100%" }} /> */}
         </Box>
         <Stepper />
       </Box>
@@ -381,9 +385,9 @@ const Stepper = () => {
         <div className="roadmap-levels__buble">
           <span>6</span>
         </div>
-        <div className="roadmap-levels__line _6"></div>
+        {/* <div className="roadmap-levels__line _6"></div> */}
       </div>
-      <div className="roadmap-levels__item">
+      {/* <div className="roadmap-levels__item">
         <div className="roadmap-levels__buble">
           <span>7</span>
         </div>
@@ -394,11 +398,11 @@ const Stepper = () => {
           <span>8</span>
         </div>
         <div className="roadmap-levels__line _8"></div>
-      </div>
-      <div className="roadmap-levels__item">
+      </div> */}
+      {/* <div className="roadmap-levels__item">
         <div className="roadmap-levels__buble _end"></div>
         <div className="roadmap-levels__line _9"></div>
-      </div>
+      </div> */}
     </Box>
   );
 };

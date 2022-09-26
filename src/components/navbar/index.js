@@ -31,6 +31,10 @@ const navlinks = [
     label: "FAQ",
     route: "#questions",
   },
+  {
+    label: "Game Alpha",
+    route: "https://thelostbirb.com",
+  },
 ];
 
 const Navbar = ({ accounts, setAccounts }) => {
@@ -97,13 +101,7 @@ const Navbar = ({ accounts, setAccounts }) => {
           </Box>
         )}
         <Box sx={styles.buttonContainer}>
-          {/* {!screenDownSm && (
-            <SwitchButton
-              value={language}
-              onChange={handleChangeLanguage}
-              options={languages}
-            />
-          )} */}
+        
           { isConnected ? (
                 <Button
                 sx={{ minWidth: "11rem" }}

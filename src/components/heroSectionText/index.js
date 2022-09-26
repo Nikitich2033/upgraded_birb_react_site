@@ -12,10 +12,6 @@ import ThickSpin  from "../../assets/thick_spin.gif";
 
 const birbsNFTAddress = "0xBf94Ed728A25A612BC93a7a87894D24f5BeDE4BB";
 
-// assets
-// import TwitterLogo from "../../assets/twitter_32x32.png";
-
-
 const HeroSectionText = ({ accounts, setAccounts }) => {
 
   const [mintAmount, setMintAmount] = useState(1);
@@ -28,7 +24,6 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
       },
     },
   };
-
 
   async function handleMint() {
       if (window.ethereum) {
@@ -135,52 +130,37 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
                     
                     <Box  display="flex"
                           justifyContent="center"
-                          alignItems="center"
-                    >
-                    <Button
-                    sx={{ minWidth: "2rem", mt: "1rem" }}
-                    // size={screenDownSm ? "small" : "medium"}
-                    variant="contained"
-                    onClick={handleMint}
-                    >
-                    <Typography variant="h2" color="tertiary.main">
-                        Mint
-                    </Typography>
-                    </Button>
+                          alignItems="center">
+                        <Button
+                          sx={{ minWidth: "2rem", mt: "1rem" }}
+                                variant="contained"
+                                onClick={handleMint}
+                        >
+                          <Typography variant="h2" color="tertiary.main">
+                            Mint
+                          </Typography>
+                        </Button>
                     </Box>
                 </Box>
                 ) : (
                   
-                  <Box>
+                  <Box >
                     <Typography
                         marginTop="70px"
                         fontSize="30px"
                         letterSpacing="-5.5%"
                         fontFamily="VT323"          
                         color="#32CD32"
-                    >
-                        You must be connected to be able to mint.
+                        textAlign="center"
+                        >
+                        You must connect your wallet to mint.
+                        (on mobile use MetaMask or any wallet browser to connect)
                     </Typography>
                   </Box>
                 )}
 
         </Box>
 
-       
-
-        <Box sx={linkWrapper}>
-          <Typography
-            sx={{
-              opacity: 0.5,
-              textDecoration: "underline",
-              color: "secondary.main",
-            }}
-            variant="body1"
-          >
-           
-          </Typography>
-          
-        </Box>
       </Box>
     </Box>
   );
@@ -205,6 +185,8 @@ const root = {
   display: "flex",
   flexDirection: "column",
   gap: { md: "350px", xs: "60px" },
+  alignItems: "center",
+  justifyContent: "space-between",
 };
 
 const textWrapper = {
@@ -214,32 +196,4 @@ const textWrapper = {
   justifyContent: "center",
   flexDirection: "column",
   height: { md: "750px", sm: "500px", xs: "400px" },
-};
-
-// const sendLinkBg = {
-//   backgroundColor: "secondary.main",
-//   opacity: 0.1,
-//   position: "absolute",
-//   top: 0,
-//   left: 0,
-//   width: "100%",
-//   height: "100%",
-// };
-
-// const sendLink = {
-//   position: "relative",
-//   height: "68px",
-//   width: "68px",
-//   borderRadius: "50%",
-//   display: "flex",
-//   alignItems: "center",
-//   justifyContent: "center",
-//   overflow: "hidden",
-// };
-
-const linkWrapper = {
-  display: { md: "flex", xs: "none" },
-  alignItems: "center",
-  justifyContent: "space-between",
-  px: "80px",
 };
