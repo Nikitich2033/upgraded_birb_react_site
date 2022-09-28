@@ -22,9 +22,12 @@ const SocialInfo = () => {
         <Typography sx={label}>
           For collabs and ideas, contact us via
         </Typography>
-        <Link href="#" sx={socialLink}>
+        <Link href="mailto:marbalabs@gmail.com" sx={socialLink}>
           <Box sx={sendButtonBg} />
-          marbalabs@gmail.com
+          <Typography variant="h3" >
+           marbalabs@gmail.com
+          </Typography>
+          
         </Link>
       </Box>
     </Box>
