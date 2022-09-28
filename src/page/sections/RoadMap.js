@@ -64,12 +64,11 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            Preparing for a project, main foundation
+            JULY 2022
           </Typography>
           <Typography variant="h4" color="secondary.main">
-            Collection and analysis of technical requirements, creation of a
-            functional prototype, formation of a team of WEB 3.0 industry
-            leaders.
+            Collection and analysis of technical requirements, creation of the first concepts,
+            original birb designer joins the team.
           </Typography>
         </Box>
         <Box
@@ -89,12 +88,10 @@ const RoadMap = () => {
             </div>
           )}
           <Typography variant="h3" color="primary.main">
-            PLAYERSIDE
+            SEPTEMBER 2022
           </Typography>
           <Typography variant="h4" color="secondary.main">
-            Collection and analysis of technical requirements, creation of a
-            Development of a personal account and interface solutions for
-            intuitive interaction with the game.
+            Mint website development and "The Lost Birb" game announcement on Twitter.
           </Typography>
         </Box>
         <Box
@@ -132,10 +129,10 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            Launching our collection on ETH blockchain.
+            OCTOBER 2022
           </Typography>
           <Typography variant="h4" color="secondary.main">
-            Details TBA
+            Website launch and BIRB mint.
           </Typography>
         </Box>
         <Box
@@ -159,11 +156,11 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            Tokenomics
+            NOVEMBER 2022
           </Typography>
           <Typography variant="h4" color="secondary.main">
-            Development of project tokenomics, automation of mutual settlements
-            between all participants of the game process.
+            "The Lost Birb" Season Fall begins
+            Start of the first competition for the best birb player with a USDT prize fund.
           </Typography>
         </Box>
         <Box
@@ -201,11 +198,10 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            Game series development
+            DECEMBER 2022
           </Typography>
           <Typography variant="h4" color="secondary.main">
-            Creation of interactive prototypes in accordance with the concept
-            and documentation, active testing within the team.
+            Announcement of the first season winners and distribution of the prizes to the winners. 
           </Typography>
         </Box>
 
@@ -230,12 +226,10 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            Active marketing campaign
+            JANUARY 2023
           </Typography>
           <Typography variant="h4" color="secondary.main">
-            We want as many people as possible to know about TUD, so a massive
-            marketing campaign on all major social networks is an important
-            milestone for us.
+           $BRB token tokenomics release.
           </Typography>
         </Box>
 
@@ -284,11 +278,11 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            Testing the alpha version of the game.
+            FEBRUARY 2023
           </Typography>
           <Typography variant="h4" color="secondary.main">
-            The first test launch of a P2E game and collecting feedback together
-            with partners and the largest TUD holders. Click on the image to try it out!
+            With the feedback and new investments "The Lost Birb" game development will continue to bring new features and improvements to the game.
+            As well as new ways to earn tokens from your birb NFT!
           </Typography>
         </Box>
 
@@ -313,11 +307,10 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            Full-scale launch platform with Metaverse games
+            FEBRUARY 2023
           </Typography>
           <Typography variant="h4" color="secondary.main">
-            The product is ready for public announcement and a lot of attention
-            from the gaming community.
+            $BRB token listing and AirDrop for birb/eth NFT holders.
           </Typography>
         </Box>
 
