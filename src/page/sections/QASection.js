@@ -119,19 +119,19 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 const QAList = [
   {
-    label: "Question #1",
+    label: "HOW MANY BIRBS ARE THERE GOING TO BE?",
     value:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum",
+      " 10.000 RANDOMLY GENERATED BIRBS WITH UNIQUE TRAIT COMBINATIONS",
   },
   {
-    label: "Question #2",
+    label: "WHAT IS THE MINT DATE?",
     value:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum",
+      " OCTOBER 14TH, 2022",
   },
   {
-    label: "Question #3",
+    label: "WHAT IS THE MINT PRICE?",
     value:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum",
+      " EACH BIRB IS 0.1ETH + gas fee",
   },
 ];
 
@@ -147,9 +147,15 @@ export function CustomizedAccordions() {
       {QAList.map((QA, index) => (
         <Accordion expanded={expanded === index} onChange={handleChange(index)}>
           <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-            {QA.label}
+            <Typography variant="h2">
+              {QA.label}
+            </Typography>
           </AccordionSummary>
-          <AccordionDetails>{QA.value}</AccordionDetails>
+          <AccordionDetails> 
+            <Typography variant="h3">
+              {QA.value}
+            </Typography>
+          </AccordionDetails>
         </Accordion>
       ))}
     </Box>

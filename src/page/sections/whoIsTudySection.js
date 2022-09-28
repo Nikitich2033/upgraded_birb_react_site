@@ -61,12 +61,47 @@ const WhoIsTudy = () => {
           flexDirection: { md: "column", xs: "column" },
         }}
       > 
-        <Box>
-        <Typography
-            sx={{ textAlign: { md: "center", xs: "center" }, fontFamily:'Monoton' }}
+        
+        <Box sx={{ maxWidth: "800px" }}>
+          <Typography
+            sx={{
+              textAlign: { md: "center", xs: "center"  },
+              mb: { md: 0, xs: "48px" },
+              py: { md: 0, xs: "18px" },
+            }}
             variant="h1"
           >
-            MARBA LABS
+            IMMINENT DEATH THREAT!
+          </Typography>
+          <Typography
+            sx={{ textAlign: { md: "center", xs: "center"  } }}
+            variant="h2"
+          >
+            {/* Collection of 10.000 unique birbs created by digital artists at MARBA LABS.
+            <br />
+            <br />
+            By minting a birb/eth NFT, you automatically become a member of an exclusive holder community 
+            on our Discord server - "The Birb Hollow"
+            <br />
+            You also gain access to taking part in contests in our GameFi project - "The Lost Birb" where you can compete to win USDT. */}
+
+            
+            <br />
+            THE OUTBREAK AT MARBA LABS CAUSED 10.000 BIRBS TO ESCAPE INTO OUR WORLD. 
+            TRAPPED IN THE METAVERSE JUNGLE THEY ARE LOOKING FOR A WAY OUT.
+            <br />
+            <br />
+            BIRBS MIGHT LOOK CUTE, HOWEVER, THE DEADLY VIRUS CARRIED IN THEIR FEATHERS WILL ASPHYXIATE THE VICTIM.
+            <br />
+            AS LONG AS THE BIRBS STAY LOST IN THE JUNGLE, THE VIRUS WILL CONTINUE TO SPREAD.
+            <br />
+            <br />
+            YOUR DUTY IS TO LEAD YOUR BIRB OUT OF THE METAVERSE JUNGLE! 
+            <br />
+            THE LOST BIRB GAME AWAITS YOU!
+            <br />
+            
+
           </Typography>
         </Box>
         <Box sx={{ maxWidth: "800px" }}>
@@ -80,36 +115,20 @@ const WhoIsTudy = () => {
           >
             Who are we?
           </Typography>
+          <Box>
+            <Typography
+            sx={{ textAlign: { md: "center", xs: "center" }, fontFamily:'Monoton' }}
+            variant="h1"
+            >
+              MARBA LABS
+            </Typography>
+          </Box>
           <Typography
             sx={{ textAlign: { md: "center", xs: "center" } }}
             variant="h2"
           >
             A collective of artists, developers, and designers. Based in Marbella, Spain.
             Who are determined to be open and transparent with their work.
-          </Typography>
-        </Box>
-        <Box sx={{ maxWidth: "800px" }}>
-          <Typography
-            sx={{
-              textAlign: { md: "center", xs: "center"  },
-              mb: { md: 0, xs: "48px" },
-              py: { md: 0, xs: "18px" },
-            }}
-            variant="h1"
-          >
-            What is birb?
-          </Typography>
-          <Typography
-            sx={{ textAlign: { md: "center", xs: "center"  } }}
-            variant="h2"
-          >
-            Collection of 10.000 unique birbs created by digital artists at MARBA LABS.
-            <br />
-            <br />
-            By minting a birb/eth NFT, you automatically become a member of an exclusive holder community 
-            on our Discord server - "The Birb Hollow"
-            <br />
-            You also gain access to taking part in contests in our GameFi project - "The Lost Birb" where you can compete to win USDT.
           </Typography>
         </Box>
       </Box>

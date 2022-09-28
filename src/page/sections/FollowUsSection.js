@@ -74,6 +74,7 @@ export default FollowUs;
 const desc = {
   fontSize: { md: "42px", xs: "20px" },
   textAlign: { lg: "left", xs: "center" },
+  mt: { md: "72px", xs: "24px"},
   mb: { md: "72px", xs: "24px" },
   color: "secondary.main",
   maxWidth: { md: "initial", xs: "558px" },
