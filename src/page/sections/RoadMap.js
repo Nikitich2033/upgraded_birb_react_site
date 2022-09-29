@@ -57,6 +57,7 @@ const RoadMap = () => {
           {screenDownLg && (
             <div className="roadmap-levels__buble">
               {/* <img src={Tick} alt="_complete" /> */}
+              <span>1</span>
             </div>
           )}
           <Typography
@@ -85,6 +86,7 @@ const RoadMap = () => {
           {screenDownLg && (
             <div className="roadmap-levels__buble">
               {/* <img src={Tick} alt="_complete" /> */}
+              <span>2</span>
             </div>
           )}
           <Typography variant="h3" color="primary.main">
@@ -148,7 +150,7 @@ const RoadMap = () => {
         >
           {screenDownLg && (
             <div className="roadmap-levels__buble">
-              {/* <span>4</span> */}
+              <span>4</span>
             </div>
           )}
           <Typography
@@ -190,7 +192,7 @@ const RoadMap = () => {
         >
           {screenDownLg && (
             <div className="roadmap-levels__buble">
-              {/* <span>5</span> */}
+              <span>5</span>
             </div>
           )}
           <Typography
@@ -218,7 +220,7 @@ const RoadMap = () => {
         >
           {screenDownLg && (
             <div className="roadmap-levels__buble">
-              {/* <span>6</span> */}
+              <span>6</span>
             </div>
           )}
           <Typography
@@ -270,7 +272,7 @@ const RoadMap = () => {
         >
           {screenDownLg && (
             <div className="roadmap-levels__buble">
-              {/* <span>7</span> */}
+              <span>7</span>
             </div>
           )}
           <Typography
@@ -299,7 +301,7 @@ const RoadMap = () => {
         >
           {screenDownLg && (
             <div className="roadmap-levels__buble">
-              {/* <span>8</span> */}
+              <span>8</span>
             </div>
           )}
           <Typography
@@ -349,30 +351,32 @@ const Stepper = () => {
       <div className="roadmap-levels__item">
         <div className="roadmap-levels__buble _complete">
           {/* <img src={Tick} alt="_complete" /> */}
+          <span>1</span>
         </div>
         <div className="roadmap-levels__line _1"></div>
       </div>
       <div className="roadmap-levels__item _complete">
         <div className="roadmap-levels__buble">
           {/* <img src={Tick} alt="_complete" /> */}
+          <span>2</span>
         </div>
         <div className="roadmap-levels__line _2"></div>
       </div>
       <div className="roadmap-levels__item">
         <div className="roadmap-levels__buble">
-          {/* <span>3</span> */}
+          <span>3</span>
         </div>
         <div className="roadmap-levels__line _3"></div>
       </div>
       <div className="roadmap-levels__item">
         <div className="roadmap-levels__buble">
-          {/* <span>4</span> */}
+          <span>4</span>
         </div>
         <div className="roadmap-levels__line _4"></div>
       </div>
       <div className="roadmap-levels__item">
         <div className="roadmap-levels__buble">
-          {/* <span>5</span> */}
+          <span>5</span>
         </div>
         {/* <div className="roadmap-levels__line _5"></div> */}
       </div>
