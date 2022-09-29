@@ -79,7 +79,7 @@ const Navbar = ({ accounts, setAccounts }) => {
 
   return (
     <>
-      <Box sx={isVisible ? styles.root : styles.rootHide}>
+      <Box sx={isVisible ? styles.root : styles.rootHide} >
         <Box>
           <Typography variant="h1" color="secondary.main">
               birb/eth
