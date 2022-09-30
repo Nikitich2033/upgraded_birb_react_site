@@ -131,7 +131,7 @@ const QAList = [
   {
     label: "WHAT IS THE MINT DATE?",
     value:
-      " OCTOBER 14TH, 2022",
+      " TBA",
   },
   {
     label: "WHAT IS THE MINT PRICE?",
