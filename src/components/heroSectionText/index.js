@@ -9,7 +9,7 @@ import BirbsNFT from '../../BirbsNFT.json'
 
 import ThickSpin  from "../../assets/thick_spin.gif";
 
-const birbsNFTAddress = "0xBf94Ed728A25A612BC93a7a87894D24f5BeDE4BB";
+const birbsNFTAddress = "0xd8Ed24d7f21D38521B2419b44c09dC0AbBBB3Cd6";
 
 const HeroSectionText = ({ accounts, setAccounts }) => {
 
