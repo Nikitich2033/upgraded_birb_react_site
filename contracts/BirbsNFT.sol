@@ -15,7 +15,7 @@ contract BirbsNFT is ERC721, Ownable {
     mapping(address => uint256) public walletMints;
 
     constructor() payable ERC721('birbs','BRB') {
-        mintPrice = 0.0002 ether;
+        mintPrice = 0.02 ether;
         totalSupply = 0;
         maxSupply = 10000;
         maxPerWallet = 10;

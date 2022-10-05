@@ -33,7 +33,7 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
       
       try {
           const response = await contract.mint(BigNumber.from(mintAmount), {
-              value: ethers.utils.parseEther((0.0002 * mintAmount).toString()),
+              value: ethers.utils.parseEther((0.02 * mintAmount).toString()),
           });
           console.log('response', response);
       } catch (error) {
