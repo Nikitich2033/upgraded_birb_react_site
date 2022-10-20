@@ -30,6 +30,44 @@ const data = [
 const Team = () => {
   return (
     <Box sx={root} id="team">
+       <Box sx={{ maxWidth: "800px" }}>
+          <Typography
+            sx={{
+              textAlign: { md: "center", xs: "center" },
+              mb: { md: 0, xs: "48px" },
+              py: { md: 0, xs: "18px" },
+            }}
+            color="secondary.main"
+            variant="h1"
+          >
+            Who are we?
+          </Typography>
+          <Box>
+            <Typography
+            sx={{ textAlign: { md: "center", xs: "center" }, fontFamily:'Monoton' }}
+            color="secondary.main"
+            variant="h1"
+            >
+              MARBA LABS
+            </Typography>
+          </Box>
+          <Typography
+            sx={{ textAlign: { md: "center", xs: "center" } }}
+            color="secondary.main"
+            variant="h2"
+          >
+            <br />
+            A collective of artists, developers, and designers. Based in Marbella, Spain.
+            Who are determined to be open and transparent with their work.
+            bringing art ahead of NFTs.
+            <br/>
+            <br/>
+            At MarbaLabs everyone shares the love for rare kinds of birds, the creatures that play one of the most important roles in our ecosystem! 
+            We wanted to share our love 
+            with the web3 community by releasing a stylised NFT collection and celebrating the incredible range of colour birds bring into our world!
+            <br/>
+          </Typography>
+        </Box>
       <Typography
         variant="h1"
         sx={{ mb: { md: "5rem", xs: "2rem" } }}
