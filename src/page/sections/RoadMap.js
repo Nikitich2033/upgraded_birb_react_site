@@ -131,10 +131,10 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            OCTOBER 2022
+            {/* OCTOBER 2022 */}
           </Typography>
           <Typography variant="h4" color="secondary.main">
-            Website launch and BIRB mint.
+            Website launch followed by BIRB mint.
           </Typography>
         </Box>
         <Box
@@ -158,7 +158,7 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            NOVEMBER 2022
+            {/* NOVEMBER 2022 */}
           </Typography>
           <Typography variant="h4" color="secondary.main">
             "The Lost Birb" Season Fall begins
@@ -200,7 +200,7 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            DECEMBER 2022
+            {/* DECEMBER 2022 */}
           </Typography>
           <Typography variant="h4" color="secondary.main">
             Announcement of the first season winners and distribution of the prizes to the winners. 
@@ -228,7 +228,7 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            JANUARY 2023
+            {/* JANUARY 2023 */}
           </Typography>
           <Typography variant="h4" color="secondary.main">
            $BRB token tokenomics release.
@@ -280,7 +280,7 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            FEBRUARY 2023
+            {/* FEBRUARY 2023 */}
           </Typography>
           <Typography variant="h4" color="secondary.main">
             With the feedback and new investments "The Lost Birb" game development will continue to bring new features and improvements to the game.
@@ -309,7 +309,7 @@ const RoadMap = () => {
             color="primary.main"
             sx={{ textTransform: "uppercase" }}
           >
-            FEBRUARY 2023
+            {/* FEBRUARY 2023 */}
           </Typography>
           <Typography variant="h4" color="secondary.main">
             $BRB token listing and AirDrop for birb/eth NFT holders.

@@ -136,7 +136,12 @@ const QAList = [
   {
     label: "WHAT IS THE MINT PRICE?",
     value:
-      " EACH BIRB IS 0.1ETH + gas fee",
+      " TBA",
+  },
+  {
+    label: "WILL PEOPLE BE ABLE TO SEE MY BIRB IN GAME?",
+    value:
+      " Holders will play «THE LOST BIRB» with their own NFT, while non-holders will use the default, colourless birb. Birb holders will be granted access to unlimited bids for multiplayer mode alongside with other perks.",
   },
 ];
 

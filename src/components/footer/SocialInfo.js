@@ -2,6 +2,7 @@ import { Box, Link, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 
 import TwitterLogo from "../../assets/twitter_32x32.png";
+import DiscordLogo from "../../assets/discord_logo.png";
 import { bounceUpsettings } from "../lib/animations";
 
 const SocialInfo = () => {
@@ -11,14 +12,22 @@ const SocialInfo = () => {
         <Typography sx={label}>
           If you have any questions, message us
         </Typography>
-        <Box sx={{ display: "flex", gap: "2.4rem" }}>
-          <Link sx={sendButton} href="#">
+        
+        <Box sx={{ display: "inline", gap: "2.4rem" }}>
+          <Link sx={sendButton} href="https://twitter.com/birbweb3">
             <Box sx={sendButtonBg} />
             <img style={{ width: "32px" }} alt="send-icon" src={TwitterLogo} />
           </Link>
         </Box>
+        <Box sx={{ display: "inline", gap: "2.4rem" }}>
+          <Link sx={sendButton} href="https://discord.gg/nJAcG3He">
+            <Box sx={sendButtonBg} />
+            <img style={{ width: "60px" }} alt="send-icon" src={DiscordLogo} />
+          </Link>
+        </Box>
+        
       </Box>
-      <Box sx={card} component={motion.div} {...bounceUpsettings}>
+      <Box sx={cardEmail} component={motion.div} {...bounceUpsettings}>
         <Typography sx={label}>
           For collabs and ideas, contact us via
         </Typography>
@@ -49,6 +58,19 @@ const root = {
 };
 
 const card = {
+  minHeight: { md: "293px" },
+  background: "#1a1a1a",
+  borderRadius: "24px",
+  padding: { md: "4.8rem", xs: "36px 24px" },
+  position: "relative",
+  zIndex: 20,
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  gap: "36px",
+};
+
+const cardEmail = {
   minHeight: { md: "293px" },
   background: "#1a1a1a",
   borderRadius: "24px",

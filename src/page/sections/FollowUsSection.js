@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { bounceUpsettings } from "../../components/lib/animations";
 
 import TwitterProfile from "../../assets/twitter_profile.png";
+import DiscordLogo from "../../assets/discord_logo.png";
 
 const FollowUs = () => {
   return (
@@ -27,43 +28,52 @@ const FollowUs = () => {
         component="img"
         src={TwitterProfile}
         sx={{
+          display: "inline",
           width: { md: "389px", xs: "220px" },
           maxWidth: { md: "389px", xs: "220px" },
           minWidth: { md: "389px", xs: "220px" },
         }}
       />
-      <Box>
+      <Box sx={{ display: "flex", flexDirection:"column"}}>
         <Typography sx={desc}>
-          Follow us on Twitter to get the latest updates on our project and become part of our community.
+          Follow us on Twitter and join our Discord server to get the latest updates on our project, take part in giveaways and become part of our community.
         </Typography>
-
-        <Link
-          sx={{
-            mx: { lg: 0, xs: "auto" },
-            position: "relative",
-            height: "68px",
-            width: "68px",
-            borderRadius: "50%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            overflow: "hidden",
-          }}
-          href="https://twitter.com/birbweb3"
-        >
-          <Box
-            // sx={{
-            //   backgroundColor: "secondary.main",
-            //   opacity: 0.1,
-            //   position: "absolute",
-            //   top: 0,
-            //   left: 0,
-            //   width: "100%",
-            //   height: "100%",
-            // }}
-          />
-          <img style={{ width: "60px" }} alt="send-icon" src={TwitterLogo} />
-        </Link>
+        <Box sx={{ display: "flex", flexDirection:"row", gap: { md: "5rem", xs: "1.5rem" },}}>
+          <Link
+            sx={{
+              mx: { lg: 0, xs: "auto" },
+              position: "relative",
+              height: "68px",
+              width: "68px",
+              borderRadius: "50%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              overflow: "hidden",
+            }}
+            href="https://twitter.com/birbweb3"
+          >
+      
+            <img style={{ width: "60px" }} alt="send-icon" src={TwitterLogo} />
+          </Link>
+          <Link
+            sx={{
+              mx: { lg: 0, xs: "auto" },
+              position: "relative",
+              height: "68px",
+              width: "68px",
+              borderRadius: "50%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              overflow: "hidden",
+            }}
+            href="https://discord.gg/nJAcG3He"
+          >
+          
+            <img style={{ width: "80px" }} alt="send-icon" src={DiscordLogo} />
+          </Link>
+        </Box>
       </Box>
     </Box>
   );

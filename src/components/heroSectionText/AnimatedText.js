@@ -52,7 +52,7 @@ const AnimatedCharacters = (props) => {
 
   return (
 
-    // <Box component="img" sx={ThickSpin} src={Image} alt="img" />
+
     <Typography
       sx={{
         fontSize: screenDownMd ? "4.5rem" : "12rem",

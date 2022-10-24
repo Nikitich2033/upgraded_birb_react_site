@@ -28,7 +28,7 @@ const navlinks = [
     route: "#team",
   },
   {
-    label: "FAQ",
+    label: "FAQ & Social",
     route: "#questions",
   },
   {
