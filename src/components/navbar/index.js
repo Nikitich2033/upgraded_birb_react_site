@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Box,
-  Button,
+  // Button,
   Link,
   Typography,
   useMediaQuery,
@@ -37,7 +37,8 @@ const navlinks = [
   },
 ];
 
-const Navbar = ({ accounts, setAccounts }) => {
+// const Navbar = ({ accounts, setAccounts }) => {
+const Navbar = ({ accounts }) => {
 
   const [isVisible, setIsVisible] = React.useState(true);
   const [scrollY, setScrollY] = React.useState(0);
@@ -47,7 +48,7 @@ const Navbar = ({ accounts, setAccounts }) => {
 
   const theme = useTheme();
   const screenDownMd = useMediaQuery(theme.breakpoints.down("md"));
-  const screenDownSm = useMediaQuery(theme.breakpoints.down("sm"));
+  // const screenDownSm = useMediaQuery(theme.breakpoints.down("sm"));
 
   React.useEffect(() => {
     if (screenDownMd && isMenu) {
@@ -64,18 +65,18 @@ const Navbar = ({ accounts, setAccounts }) => {
     });
   });
 
-  async function connectAccount(){
-    if (window.ethereum) {
-        const accounts = await window.ethereum.request({
-            method: "eth_requestAccounts"
-        })
+  // async function connectAccount(){
+  //   if (window.ethereum) {
+  //       const accounts = await window.ethereum.request({
+  //           method: "eth_requestAccounts"
+  //       })
 
-        setAccounts(accounts);
-    }
-  }
+  //       setAccounts(accounts);
+  //   }
+  // }
   
   //const [accounts, setAccounts] = useState([]);
-  const isConnected = Boolean(accounts[0]);
+  // const isConnected = Boolean(accounts[0]);
 
   return (
     <>
@@ -102,7 +103,7 @@ const Navbar = ({ accounts, setAccounts }) => {
         )}
         <Box sx={styles.buttonContainer}>
         
-          { isConnected ? (
+          {/* { isConnected ? (
                 <Button
                 sx={{ minWidth: "11rem" }}
                 size={screenDownSm ? "small" : "medium"}
@@ -124,7 +125,7 @@ const Navbar = ({ accounts, setAccounts }) => {
                     Connect Wallet
                 </Typography>
                 </Button>
-                )}
+                )} */}
           
         </Box>
         {screenDownMd && (
