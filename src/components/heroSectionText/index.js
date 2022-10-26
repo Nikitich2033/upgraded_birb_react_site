@@ -76,7 +76,7 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
          alignItems="center"
          minHeight="100vh"
         >
-          <motion.div
+          {/* <motion.div
             className="App"
             initial="hidden"
             animate="visible"
@@ -88,9 +88,9 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
             </Link>
             
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {isConnected ? (
+          {/* {isConnected ? (
                 <Box>
                     <Box >
                       <Button
@@ -156,8 +156,15 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
                         (on mobile use MetaMask or any wallet browser to connect)
                     </Typography>
                   </Box>
-                )}
-          
+                )} */}
+              <iframe
+              title="mintFrame"
+              src="https://gateway.ipfscdn.io/ipfs/QmXe7gUzvkqmT6Pey8vUkwFZMaKRVzzvGc55TTFUzdQq3m/signature-drop.html?contract=0xc5Ba1B847f51a67f917FAEf3ad5f0D728579850D&chainId=5&theme=dark&primaryColor=green"
+              width="600px"
+              height="600px"
+              style={{ maxWidth:"100%"}}
+              frameBorder="0"
+              ></iframe>
         </Box>
 
       </Box>
