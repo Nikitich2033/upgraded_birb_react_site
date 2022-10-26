@@ -1,60 +1,62 @@
 import React from "react";
-import { Box, Typography,Link, TextField, Button} from "@mui/material";
-import { motion } from "framer-motion";
-import { useState } from 'react';
-import {ethers, BigNumber} from "ethers";
-import BirbsNFT from '../../BirbsNFT.json'
+// import { Box, Typography,Link, TextField, Button} from "@mui/material";
+import { Box } from "@mui/material";
+//import { motion } from "framer-motion";
+// import { useState } from 'react';
+// import {ethers, BigNumber} from "ethers";
+// import BirbsNFT from '../../BirbsNFT.json'
 
 // import AnimatedText from "./AnimatedText";
 
-import ThickSpin  from "../../assets/thick_spin.gif";
+//import ThickSpin  from "../../assets/thick_spin.gif";
 
-const birbsNFTAddress = "0xd8Ed24d7f21D38521B2419b44c09dC0AbBBB3Cd6";
+//const birbsNFTAddress = "0xd8Ed24d7f21D38521B2419b44c09dC0AbBBB3Cd6";
 
-const HeroSectionText = ({ accounts, setAccounts }) => {
+// const HeroSectionText = ({ accounts, setAccounts }) => {
+const HeroSectionText = () => {
 
-  const [mintAmount, setMintAmount] = useState(1);
-  const isConnected = Boolean(accounts[0]);
+  // const [mintAmount, setMintAmount] = useState(1);
+  // const isConnected = Boolean(accounts[0]);
 
-  const container = {
-    visible: {
-      transition: {
-        staggerChildren: 0.025,
-      },
-    },
-  };
+  // const container = {
+  //   visible: {
+  //     transition: {
+  //       staggerChildren: 0.025,
+  //     },
+  //   },
+  // };
 
-  async function handleMint() {
-      if (window.ethereum) {
-          const provider = new ethers.providers.Web3Provider(window.ethereum);
-          const signer = provider.getSigner();
-          const contract = new ethers.Contract(birbsNFTAddress, BirbsNFT.abi, signer);
+  // async function handleMint() {
+  //     if (window.ethereum) {
+  //         const provider = new ethers.providers.Web3Provider(window.ethereum);
+  //         const signer = provider.getSigner();
+  //         const contract = new ethers.Contract(birbsNFTAddress, BirbsNFT.abi, signer);
 
       
-      try {
-          const response = await contract.mint(BigNumber.from(mintAmount), {
-              value: ethers.utils.parseEther((0.02 * mintAmount).toString()),
-          });
-          console.log('response', response);
-      } catch (error) {
-          console.log("error: ",error);
-      }
-      }
-  }
+  //     try {
+  //         const response = await contract.mint(BigNumber.from(mintAmount), {
+  //             value: ethers.utils.parseEther((0.02 * mintAmount).toString()),
+  //         });
+  //         console.log('response', response);
+  //     } catch (error) {
+  //         console.log("error: ",error);
+  //     }
+  //     }
+  // }
 
-  const handleDecrement = () => {
+  // const handleDecrement = () => {
   
-      if (mintAmount <= 1) return;
-      setMintAmount(mintAmount - 1);
+  //     if (mintAmount <= 1) return;
+  //     setMintAmount(mintAmount - 1);
   
-  }
+  // }
 
-  const handleIncrement = () => {
+  // const handleIncrement = () => {
   
-      if (mintAmount >= 5) return;
-      setMintAmount(mintAmount + 1);
+  //     if (mintAmount >= 5) return;
+  //     setMintAmount(mintAmount + 1);
   
-  }
+  // }
 
 
 
