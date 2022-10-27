@@ -101,6 +101,7 @@ const Navbar = ({ accounts }) => {
             ))}
           </Box>
         )}
+        <Box sx={styles.buttonContainer}></Box>
         <Box sx={styles.buttonContainer}>
         
           {/* { isConnected ? (
@@ -146,11 +147,6 @@ const Navbar = ({ accounts }) => {
             opacity: isMenu ? 1 : 0,
           }}
         >
-          {/* <SwitchButton
-            value={language}
-            onChange={handleChangeLanguage}
-            options={languages}
-          /> */}
           <Box sx={styles.navlist}>
             {navlinks.map((navlink, index) => (
               <Link
