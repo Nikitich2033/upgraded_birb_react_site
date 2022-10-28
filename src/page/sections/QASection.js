@@ -40,7 +40,7 @@ const QASection = () => {
           <Typography sx={{color: "secondary.main",
                            fontSize: { md: "48px", xs: "24px" },
                             paddingLeft: { md: "90px", xs: 0 },}}>
-                        Instructions will be provided here when the mint date is announced on Twitter.
+                        Use the mint plugin at the top of the page to connect your wallet and mint a birb NFT.
           </Typography>
           {/* <HorizontalNonLinearStepper /> */}
         </Box>
@@ -131,12 +131,12 @@ const QAList = [
   {
     label: "WHAT IS THE MINT DATE?",
     value:
-      " TBA",
+      " PHASE 1: EARLY BIRB COMMUNITY MINT: 500 BIRBS ON Oct 28 2022 & further phases will be announced later",
   },
   {
     label: "WHAT IS THE MINT PRICE?",
     value:
-      " TBA",
+      " PHASE 1: 0.065 ETH + gas",
   },
   {
     label: "WILL PEOPLE BE ABLE TO SEE MY BIRB IN GAME?",
