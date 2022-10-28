@@ -4,31 +4,37 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 
 // import BirdImg from "../../assets/bird.jpg";
-import Bird1 from "../../assets/1.png";
-import Bird2 from "../../assets/2.png";
-import Bird3 from "../../assets/3.png";
-import Bird4 from "../../assets/4.png";
+import Bird1 from "../../assets/334.png";
+import Bird2 from "../../assets/524.png";
+import Bird3 from "../../assets/854.png";
+import Bird4 from "../../assets/7380.png";
+import Bird5 from "../../assets/7506.png";
 import { bounceUpsettings } from "../../components/lib/animations";
 
 const data = [
   {
     src: Bird1,
-    name: "#69",
+    name: "#334",
     id: 4073,
   },
   {
     src: Bird2,
-    name: "#420",
+    name: "#524",
     id: 6376,
   },
   {
     src: Bird3,
-    name: "#50",
+    name: "#854",
     id: 7240,
   },
   {
     src: Bird4,
-    name: "#28",
+    name: "#7380",
+    id: 1524,
+  },
+  {
+    src: Bird5,
+    name: "#7506",
     id: 1524,
   },
 

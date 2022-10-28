@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Box,
-  Button,
+  //Button,
   Link,
   Typography,
   useMediaQuery,
@@ -13,6 +13,7 @@ import * as styles from "./navbar.styles";
 // assets
 // import SendIcon from "../../assets/send-icon.svg";
 import TwitterLogo from "../../assets/twitter_32x32.png";
+import DiscordLogo from "../../assets/discord_logo.png";
 
 const navlinks = [
   {
@@ -47,7 +48,7 @@ const Navbar = ({ accounts, setAccounts }) => {
 
   const theme = useTheme();
   const screenDownMd = useMediaQuery(theme.breakpoints.down("md"));
-  const screenDownSm = useMediaQuery(theme.breakpoints.down("sm"));
+  //const screenDownSm = useMediaQuery(theme.breakpoints.down("sm"));
 
   React.useEffect(() => {
     if (screenDownMd && isMenu) {
@@ -64,18 +65,18 @@ const Navbar = ({ accounts, setAccounts }) => {
     });
   });
 
-  async function connectAccount(){
-    if (window.ethereum) {
-        const accounts = await window.ethereum.request({
-            method: "eth_requestAccounts"
-        })
+  // async function connectAccount(){
+  //   if (window.ethereum) {
+  //       const accounts = await window.ethereum.request({
+  //           method: "eth_requestAccounts"
+  //       })
 
-        setAccounts(accounts);
-    }
-  }
+  //       setAccounts(accounts);
+  //   }
+  // }
   
   //const [accounts, setAccounts] = useState([]);
-  const isConnected = Boolean(accounts[0]);
+  //const isConnected = Boolean(accounts[0]);
 
   return (
     <>
@@ -100,32 +101,41 @@ const Navbar = ({ accounts, setAccounts }) => {
             ))}
           </Box>
         )}
-        <Box sx={styles.buttonContainer}>
-        
-          { isConnected ? (
-                <Button
-                sx={{ minWidth: "11rem" }}
-                size={screenDownSm ? "small" : "medium"}
-                variant="contained"
-                >
-                <Typography variant="h3" color="tertiary.main">
-                    Connected
-                </Typography>
-                </Button>
-                ) : (
-                <Button
-                  sx={{ minWidth: "11rem" }}
-                  size={screenDownSm ? "small" : "medium"}
-                  variant="contained"
-                  onClick={connectAccount}
-                  //accounts={accounts} setAccounts={setAccounts}
-                >
-                <Typography variant="h3" color="tertiary.main">
-                    Connect Wallet
-                </Typography>
-                </Button>
-                )}
+        <Box sx={{ display: "flex", flexDirection:"row", gap: { md: "5rem", xs: "1.5rem" },}}>
+          <Link
+            sx={{
+              mx: { lg: 0, xs: "auto" },
+              position: "relative",
+              height: "68px",
+              width: "68px",
+              borderRadius: "50%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              overflow: "hidden",
+            }}
+            href="https://twitter.com/birbweb3"
+          >
+      
+            <img style={{ width: "60px" }} alt="send-icon" src={TwitterLogo} />
+          </Link>
+          <Link
+            sx={{
+              mx: { lg: 0, xs: "auto" },
+              position: "relative",
+              height: "68px",
+              width: "68px",
+              borderRadius: "50%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              overflow: "hidden",
+            }}
+            href="https://discord.gg/nJAcG3He"
+          >
           
+            <img style={{ width: "90px" }} alt="send-icon" src={DiscordLogo} />
+          </Link>
         </Box>
         {screenDownMd && (
           <Box
