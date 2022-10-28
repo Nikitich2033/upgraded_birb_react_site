@@ -117,7 +117,7 @@ const Navbar = ({ accounts, setAccounts }) => {
             href="https://twitter.com/birbweb3"
           >
       
-            <img style={{ width: "60px" }} alt="send-icon" src={TwitterLogo} />
+            <img style={{ width: "35px" }} alt="send-icon" src={TwitterLogo} />
           </Link>
           <Link
             sx={{
@@ -134,7 +134,7 @@ const Navbar = ({ accounts, setAccounts }) => {
             href="https://discord.gg/nJAcG3He"
           >
           
-            <img style={{ width: "90px" }} alt="send-icon" src={DiscordLogo} />
+            <img style={{ width: "60px" }} alt="send-icon" src={DiscordLogo} />
           </Link>
         </Box>
         {screenDownMd && (
