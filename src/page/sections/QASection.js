@@ -131,7 +131,7 @@ const QAList = [
   {
     label: "WHAT IS THE MINT DATE?",
     value:
-      " PHASE 1: EARLY BIRB COMMUNITY MINT: 500 BIRBS ON Oct 28 2022 at 17:00 CET & further phases will be announced later",
+      " PHASE 1: EARLY BIRB COMMUNITY MINT: 500 BIRBS ON Oct 29 2022 at 18:00 CET & further phases will be announced later",
   },
   {
     label: "WHAT IS THE MINT PRICE?",
