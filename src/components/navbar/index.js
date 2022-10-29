@@ -13,7 +13,7 @@ import * as styles from "./navbar.styles";
 // assets
 // import SendIcon from "../../assets/send-icon.svg";
 import TwitterLogo from "../../assets/twitter_32x32.png";
-import DiscordLogo from "../../assets/discord_logo.png";
+// import DiscordLogo from "../../assets/discord_logo.png";
 
 const navlinks = [
   {
@@ -102,7 +102,11 @@ const Navbar = ({ accounts, setAccounts }) => {
           </Box>
         )}
         <Box sx={{ display: "flex", flexDirection:"row", gap: { md: "5rem", xs: "1.5rem" },}}>
-          <Link
+          
+          <a href="https://thirdweb.com/ethereum/0xdEB04F0c3a13954c6CDB7078E710d04c465eAb01?utm_source=contract_badge" target="_blank" rel="noreferrer">
+            <img width="200" height="45" src="https://badges.thirdweb.com/contract?address=0xdEB04F0c3a13954c6CDB7078E710d04c465eAb01&theme=dark&chainId=1" alt="View contract" />
+          </a>
+          {/* <Link
             sx={{
               mx: { lg: 0, xs: "auto" },
               position: "relative",
@@ -135,7 +139,7 @@ const Navbar = ({ accounts, setAccounts }) => {
           >
           
             <img style={{ width: "60px" }} alt="send-icon" src={DiscordLogo} />
-          </Link>
+          </Link> */}
         </Box>
         {screenDownMd && (
           <Box
