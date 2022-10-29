@@ -89,10 +89,10 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
             
             </div>
           </motion.div> */}
-          
+
           <iframe
               title="mintFrame"
-              src="https://gateway.ipfscdn.io/ipfs/QmPuyhD9TN9gp29M2YCvhRCjQbj3dBoN87omyBUnFAJiQM/signature-drop.html?contract=0xdEB04F0c3a13954c6CDB7078E710d04c465eAb01&chainId=1&theme=dark&primaryColor=orange"
+              src="https://gateway.ipfscdn.io/ipfs/QmPuyhD9TN9gp29M2YCvhRCjQbj3dBoN87omyBUnFAJiQM/signature-drop.html?contract=0xdEB04F0c3a13954c6CDB7078E710d04c465eAb01&chainId=1&rpcUrl=https%3A%2F%2Fmainnet.infura.io%2Fv3%2F794bf083768e4f84bee92e247f095653&theme=dark&primaryColor=orange"
               width="600px"
               height="600px"
               style={{ maxWidth:"100%"}}
