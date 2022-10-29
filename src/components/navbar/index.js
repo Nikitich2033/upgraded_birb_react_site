@@ -11,7 +11,6 @@ import {
 import * as styles from "./navbar.styles";
 
 // assets
-// import SendIcon from "../../assets/send-icon.svg";
 import TwitterLogo from "../../assets/twitter_32x32.png";
 import DiscordLogo from "../../assets/discord_logo.png";
 
