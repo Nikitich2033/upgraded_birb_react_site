@@ -89,6 +89,7 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
             
             </div>
           </motion.div> */}
+          
           <iframe
               title="mintFrame"
               src="https://gateway.ipfscdn.io/ipfs/QmPuyhD9TN9gp29M2YCvhRCjQbj3dBoN87omyBUnFAJiQM/signature-drop.html?contract=0xdEB04F0c3a13954c6CDB7078E710d04c465eAb01&chainId=1&theme=dark&primaryColor=orange"
@@ -97,6 +98,7 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
               style={{ maxWidth:"100%"}}
               frameBorder="0"
               ></iframe>
+
           {/* {isConnected ? (
                 <Box>
                     <Box >
