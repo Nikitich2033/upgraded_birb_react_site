@@ -1,14 +1,14 @@
 import React from "react";
 // { Box, Typography,Link, TextField, Button} from "@mui/material";
 import { Box} from "@mui/material";
-//import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 //import { useState } from 'react';
 //import {ethers, BigNumber} from "ethers";
 //import BirbsNFT from '../../BirbsNFT.json'
 
 //import AnimatedText from "./AnimatedText";
 
-//import ThickSpin  from "../../assets/thick_spin.gif";
+import ThickSpin  from "../../assets/thick_spin.gif";
 //import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
 
 // const birbsNFTAddress = "0xBf94Ed728A25A612BC93a7a87894D24f5BeDE4BB";
@@ -18,13 +18,13 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
   // const [mintAmount, setMintAmount] = useState(1);
   // const isConnected = Boolean(accounts[0]);
 
-  // const container = {
-  //   visible: {
-  //     transition: {
-  //       staggerChildren: 0.025,
-  //     },
-  //   },
-  // };
+  const container = {
+    visible: {
+      transition: {
+        staggerChildren: 0.025,
+      },
+    },
+  };
 
   // async function handleMint() {
   //     if (window.ethereum) {
