@@ -31,10 +31,10 @@ const navlinks = [
     label: "FAQ & Social",
     route: "#questions",
   },
-  {
-    label: "Game Alpha",
-    route: "https://thelostbirb.com",
-  },
+  // {
+  //   label: "Game Alpha",
+  //   route: "https://thelostbirb.com",
+  // },
 ];
 
 const Navbar = ({ accounts, setAccounts }) => {
