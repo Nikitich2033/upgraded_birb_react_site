@@ -1,4 +1,4 @@
-import { Box, Typography, useMediaQuery, useTheme, Link } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme} from "@mui/material";
 import { motion } from "framer-motion";
 import { bounceUpsettings } from "../../components/lib/animations";
 
