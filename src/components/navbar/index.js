@@ -132,7 +132,7 @@ const Navbar = ({ accounts, setAccounts }) => {
               justifyContent: "center",
               overflow: "hidden",
             }}
-            href="https://discord.gg/nJAcG3He"
+            href="https://discord.gg/uVQKMHpdjv"
           >
           
             <img style={{ width: "60px" }} alt="send-icon" src={DiscordLogo} />

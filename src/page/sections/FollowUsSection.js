@@ -68,7 +68,7 @@ const FollowUs = () => {
               justifyContent: "center",
               overflow: "hidden",
             }}
-            href="https://discord.gg/nJAcG3He"
+            href="https://discord.gg/uVQKMHpdjv"
           >
           
             <img style={{ width: "80px" }} alt="send-icon" src={DiscordLogo} />
