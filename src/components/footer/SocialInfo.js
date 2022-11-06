@@ -20,7 +20,7 @@ const SocialInfo = () => {
           </Link>
         </Box>
         <Box sx={{ display: "inline", gap: "2.4rem" }}>
-          <Link sx={sendButton} href="https://discord.gg/nJAcG3He">
+          <Link sx={sendButton} href="https://discord.gg/uVQKMHpdjv">
             <Box sx={sendButtonBg} />
             <img style={{ width: "60px" }} alt="send-icon" src={DiscordLogo} />
           </Link>
