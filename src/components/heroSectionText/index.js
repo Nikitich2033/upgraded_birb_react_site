@@ -1,14 +1,14 @@
 import React from "react";
 // import { Box, Typography,Link, TextField, Button } from "@mui/material";
-import { Box, Link} from "@mui/material";
-import { motion } from "framer-motion";
+import { Box } from "@mui/material";
+// import { motion } from "framer-motion";
 // import { useState } from 'react';
 // import {ethers, BigNumber} from "ethers";
 // import BirbsNFT from '../../BirbsNFT.json'
 
 //import AnimatedText from "./AnimatedText";
 
-import ThickSpin  from "../../assets/thick_spin.gif";
+// import ThickSpin  from "../../assets/thick_spin.gif";
 //import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
 
 // const birbsNFTAddress = "0xBf94Ed728A25A612BC93a7a87894D24f5BeDE4BB";
@@ -18,13 +18,13 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
   // const [mintAmount, setMintAmount] = useState(1);
   // const isConnected = Boolean(accounts[0]);
 
-  const container = {
-    visible: {
-      transition: {
-        staggerChildren: 0.025,
-      },
-    },
-  };
+  // const container = {
+  //   visible: {
+  //     transition: {
+  //       staggerChildren: 0.025,
+  //     },
+  //   },
+  // };
 
   // async function handleMint() {
   //     if (window.ethereum) {
@@ -76,7 +76,7 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
          alignItems="center"
          minHeight="100vh"
         >
-          <motion.div
+          {/* <motion.div
             className="App"
             initial="hidden"
             animate="visible"
@@ -88,16 +88,16 @@ const HeroSectionText = ({ accounts, setAccounts }) => {
             </Link>
             
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* <iframe
+          <iframe
               title="mintFrame"
               src="https://gateway.ipfscdn.io/ipfs/QmQM4Njtt2o4cQ98Mi2kBD6rBsfH6LfeaRYBYLpR41nVFs/signature-drop.html?contract=0xdEB04F0c3a13954c6CDB7078E710d04c465eAb01&chainId=1&theme=dark&primaryColor=orange"
               width="600px"
               height="600px"
               style={{ maxWidth:"100%"}}
               frameBorder="0"
-              ></iframe> */}
+              ></iframe>
 
           {/* {isConnected ? (
                 <Box>
